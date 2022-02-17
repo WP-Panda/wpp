@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+}
+
+.wpp-container {
+    width: 100%;
+    padding: 0 15px;
+}
+
+.wpp-row{
+    margin: 0 -15px;
+    width: 100vw;
+    float: left;
+}
+
+.wpp-col{
+    display: block;
+    float: left;
+    padding: 0 15px;
+}
+
+.wpp-text-right {
+    text-align: right;
+}
+
+.wpp-text-left {
+    text-align: left;
+}
+
+.wpp-1_2 {
+    width: 50%;
+}
