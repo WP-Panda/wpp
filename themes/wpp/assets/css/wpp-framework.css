@@ -7,13 +7,13 @@
     padding: 0 15px;
 }
 
-.wpp-row{
+.wpp-row {
     margin: 0 -15px;
     width: 100vw;
     float: left;
 }
 
-.wpp-col{
+.wpp-col {
     display: block;
     float: left;
     padding: 0 15px;
@@ -27,6 +27,78 @@
     text-align: left;
 }
 
-.wpp-1_2 {
+.wpp-1, .wpp-3_3, .wpp-4_4, .wpp-5_5 {
+    width: 100%;
+}
+
+.wpp-1_2, .wpp-2_4 {
     width: 50%;
+}
+
+.wpp-1_3 {
+    width: 33%;
+}
+
+.wpp-2_3 {
+    width: 66%;
+}
+
+.wpp-1_4 {
+    width: 25%;
+}
+
+.wpp-3_4 {
+    width: 75%;
+}
+
+.wpp-1_5 {
+    width: 20%;
+}
+
+.wpp-2_5 {
+    width: 40%;
+}
+
+.wpp-3_5 {
+    width: 60%;
+}
+
+.wpp-4_5 {
+    width: 80%;
+}
+
+
+input.wpp-input {
+    width: 100%;
+    border-radius: 0;
+    border: 1px solid var(--lite-dark);
+    font-size: 18px;
+    padding: 7px 15px;
+    outline: none;
+}
+
+.wpp-show-hide-trigger {
+    cursor: pointer;
+}
+
+.wpp-btn {
+    border-radius: 0;
+    cursor: pointer;
+    border: 1px solid;
+    box-sizing: border-box;
+}
+
+.wpp-btn-medium {
+    padding: 7px 30px;
+    font-size: 18px;
+}
+
+.wpp-icon-small {
+    width: 20px;
+    height: 20px;
+}
+
+.wpp-icon-medium {
+    width: 32px;
+    height: 32px;
 }
