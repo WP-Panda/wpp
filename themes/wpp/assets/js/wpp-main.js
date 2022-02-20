@@ -1,22 +1,48 @@
-jQuery(function ($){
+jQuery(function ($) {
 
-    $(document).on('click','.wpp-search-trigger',function (e){
+    /**
+     * Показ формы поиска
+     */
+    $(document).on('click', '.wpp-search-trigger', function (e) {
 
         let $this = $(this),
             $target = $this.parents('.wpp-show-hide-block'),
             $height = $target.height(),
-            $img = $this.find('img');
+            $i = $this.find('i'),
+            $search_array = WPP.search_array;
 
-        if($this.hasClass('opened')){
-            $target.animate({'margin-top': '-' + ( $height + 28 ) },500)
+        if ($this.hasClass('opened')) {
+            $target.animate({'bottom': -3}, 500)
             $this.removeClass('opened')
-            $img.attr('src', $img.data('show'))
+            $i.removeClass('wpp-i-shewron-up').addClass('wpp-i-glass')
         } else {
-            $target.animate({'margin-top':0},500)
+
+            $('.wpp-search-input').attr('placeholder', $search_array[Math.floor(Math.random() * $search_array.length)])
+
+            $target.animate({'bottom': '-' + ($height + 28)}, 500)
             $this.addClass('opened')
-            $img.attr('src', $img.data('hide'))
+            $i.removeClass('wpp-i-glass').addClass('wpp-i-shewron-up')
         }
 
     });
+
+    $(document).on('click', '.nav-get', function (e) {
+        e.preventDefault()
+        let $target = $('.wpp-main-nav');
+
+        if (!$target.hasClass('opened')) {
+            $target.addClass('opened').css({'display': 'block'}).animate({'opacity': 1}, 500)
+
+        } else {
+            $target.animate({'opacity': 0}, 500).css({'display': 'none'}).removeClass('opened')
+        }
+    });
+
+    $(document).on('click','.nav-close',function (e){
+        e.preventDefault()
+        let $target = $('.wpp-main-nav');
+        $target.animate({'opacity': 0,'display': 'none'}, 500).css({'display': 'none'}).removeClass('opened')
+        //;
+    })
 
 })

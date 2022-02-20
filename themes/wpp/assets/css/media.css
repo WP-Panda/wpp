@@ -1,0 +1,72 @@
+@media ( max-width: 1124px) {
+    .wpp-main-nav-list {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-get {
+        color: var(--gray-lite);
+        cursor: pointer;
+        float: right;
+        display: block;
+        font-size: 2rem;
+        padding-right: 12px;
+    }
+
+    .wpp-main-nav {
+        opacity: 0;
+        display: none;
+    }
+
+    .wpp-main-nav.opened {
+        height: 100%;
+        position: fixed;
+        top: 0;
+        box-sizing: border-box;
+        background-color: #fff;
+        width: 100vw;
+        left: 0;
+        padding: 20px;
+    }
+
+    ul.wpp-main-nav-list li {
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid;
+    }
+
+    ul.wpp-main-nav-list li a {
+        font-size: 23px;
+        padding: 8px;
+    }
+
+    ul.wpp-main-nav-list li:last-of-type {
+        border-bottom: none;
+    }
+
+    .nav-close {
+        display: none;
+        float: right;
+        font-size: 30px;
+        margin-right: 10px;
+        cursor: pointer;
+        width: 35px;
+        height: 35px;
+        text-align: center;
+        color: var(--error);
+        border: 1px solid;
+        border-radius: 50%;
+        line-height: 1.3;
+    }
+
+    .wpp-main-nav.opened .nav-close {
+        display: block;
+    }
+
+    .wpp-main-nav.opened .wpp-nav-header {
+        display: block;
+    }
+
+}

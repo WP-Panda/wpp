@@ -1,16 +1,47 @@
-* {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
 .wpp-container {
     width: 100%;
-    padding: 0 15px;
+}
+/*
+@media (min-width: 576px) {
+    .wpp-container {
+        max-width: 540px;
+    }
 }
 
+@media (min-width: 768px) {
+    .wpp-container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .wpp-container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .wpp-container {
+        max-width: 1140px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .wpp-container {
+        max-width: 1320px;
+    }
+}
+*/
 .wpp-row {
-    margin: 0 -15px;
-    width: 100vw;
-    float: left;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .wpp-col {
@@ -66,7 +97,6 @@
 .wpp-4_5 {
     width: 80%;
 }
-
 
 input.wpp-input {
     width: 100%;
