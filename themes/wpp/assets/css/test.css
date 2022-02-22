@@ -33,7 +33,6 @@ header.site-header {
 
 .wpp-top-user-nav a {
     width: 24px;
-    background-color: var(--error);
     border-radius: 50%;
     display: block;
     text-align: center;
@@ -48,6 +47,10 @@ header.site-header {
     transition: background-color .3s;
 }
 
+.sticky-h .wpp-head-main-panel {
+    position: fixed;
+    top: 0;
+}
 
 /*Главная панель*/
 .wpp-head-main-panel {
@@ -88,6 +91,7 @@ header.site-header {
 .wpp-main-nav-list a {
     font-size: 20px;
     text-decoration: none;
+    font-weight: 300;
     padding: 18px 0;
     display: block;
     color: var(--gray-lite);

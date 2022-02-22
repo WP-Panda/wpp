@@ -2,11 +2,88 @@
 *::before,
 *::after {
     box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
 }
 
 .wpp-container {
     width: 100%;
 }
+
+.wpp-bg-error{
+    background-color: var(--error);
+}
+.wpp-bg-warning{
+    background-color: var(--warning);
+}
+.wpp-bg-success{
+    background-color: var(--success);
+}
+.wpp-bg-info{
+    background-color: var(--info);
+}
+.wpp-bg-accent{
+    background-color: var(--accent);
+}
+.wpp-bg-gray{
+    background-color: var(--gray);
+}
+.wpp-bg-dark{
+    background-color: var(--dark);
+}
+
+.wpp-bg-error:hover{
+    background-color: var(--error-dark);
+}
+.wpp-bg-warning:hover{
+    background-color: var(--warning-dark);
+}
+.wpp-bg-success:hover{
+    background-color: var(--success-dark);
+}
+.wpp-bg-info:hover{
+    background-color: var(--info-dark);
+}
+.wpp-bg-accent:hover{
+    background-color: var(--accent-dark);
+}
+.wpp-bg-gray:hover{
+    background-color: var(--gray-dark);
+}
+.wpp-bg-dark:hover{
+    background-color: var(--dark-dark);
+}
+
+.wpp-color-error{
+    color: var(--error);
+}
+.wpp-color-warning{
+    color: var(--warning);
+}
+.wpp-color-success{
+    color: var(--success);
+}
+.wpp-color-info{
+    color: var(--info);
+}
+.wpp-color-accent{
+    color: var(--accent);
+}
+.wpp-color-gray{
+    color: var(--gray);
+}
+.wpp-color-dark{
+    color: var(--dark);
+}
+.wpp-color-light,
+.wpp-color-light:hover{
+    color: var(--lite);
+}
+.wpp-color-black{
+    color: var(--black);
+}
+
+
 /*
 @media (min-width: 576px) {
     .wpp-container {

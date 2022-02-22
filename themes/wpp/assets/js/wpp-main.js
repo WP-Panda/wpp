@@ -45,4 +45,13 @@ jQuery(function ($) {
         //;
     })
 
+
+    $(window).scroll(function(){
+        var sticky = $('body'),
+            scroll = $(window).scrollTop();
+
+        if (scroll >= 32) sticky.addClass('sticky-h');
+        else sticky.removeClass('sticky-h');
+    });
+
 })
