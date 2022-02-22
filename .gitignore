@@ -22,4 +22,5 @@ node_modules/
 *.sql
 *.sqlite
 /languages/
-/themes/wpp/index.html
+/themes/wpp/*.html
+/themes/wpp/_*
