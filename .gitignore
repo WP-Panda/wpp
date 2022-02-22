@@ -24,3 +24,4 @@ node_modules/
 /languages/
 /themes/wpp/*.html
 /themes/wpp/_*
+/themes/wpp/assets/dist/

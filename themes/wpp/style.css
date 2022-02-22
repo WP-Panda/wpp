@@ -4,12 +4,3 @@ Theme URI: yoowordpress@yandex.ru
 Author: Wp Panda
 Version: 0.0.1
 */
-
-@import "assets/css/normalize.css";
-@import "assets/css/root.css";
-@import "assets/css/wpp-framework.css";
-@import "assets/fonts/wpp-tiny/style.css";
-@import "assets/fonts/Roboto/roboto.css";
-@import 'assets/css/test.css';
-@import 'assets/css/test-hover.css';
-@import 'assets/css/media.css';

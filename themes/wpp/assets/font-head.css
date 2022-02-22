@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'wpp-tiny';
+    src:  url('fonts/wpp-tiny/wpp-tiny.eot?wpp');
+    src:  url('fonts/wpp-tiny/wpp-tiny.eot?wpp#iefix') format('embedded-opentype'),
+    url('fonts/wpp-tiny/wpp-tiny.ttf?wpp') format('truetype'),
+    url('fonts/wpp-tiny/wpp-tiny.woff?wpp') format('woff'),
+    url('fonts/wpp-tiny/wpp-tiny.svg?wpp#wpp-tiny') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}

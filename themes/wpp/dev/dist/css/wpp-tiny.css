@@ -1,0 +1,36 @@
+[class^="wpp-i-"], [class*=" wpp-i-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'wpp-tiny' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.wpp-i-burger:before {
+  content: "\e900";
+}
+.wpp-i-glass:before {
+  content: "\e901";
+}
+.wpp-i-glass-minus:before {
+  content: "\e902";
+}
+.wpp-i-shewron-down:before {
+  content: "\e903";
+}
+.wpp-i-shewron-up:before {
+  content: "\e904";
+}
+.wpp-i-user:before {
+  content: "\e905";
+}
+.wpp-i-x-close:before {
+  content: "\e906";
+}

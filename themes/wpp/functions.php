@@ -12,23 +12,23 @@ defined( 'ABSPATH' ) || exit;
 require_once 'core/init.php';
 
 function add_theme_scripts() {
-	wp_enqueue_style( 'style', get_stylesheet_uri() );
-	wp_enqueue_script( 'jquery' );
+	wp_enqueue_style( 'wpp-main', get_stylesheet_directory_uri() . '/assets/wpp-main.css', [], '0.0.0.2' );
 
-	wp_enqueue_script('wpp-main' ,
-		get_stylesheet_directory_uri() . '/assets/js/wpp-main.js',
+	wp_enqueue_script( 'wpp-main',
+		get_stylesheet_directory_uri() . '/assets/wpp-main.js',
 		[ 'jquery' ],
 		'0.0.0.2',
 		true );
 
-	wp_localize_script('wpp-main', 'WPP',
-	[
-		'search_array' =>[
-			'Искать тут...',
-			'Введите поисковую фразу...',
-			'Найду все...'
-		]
-	]);
+	wp_localize_script( 'wpp-main',
+		'WPP',
+		[
+			'search_array' => [
+				'Искать тут...',
+				'Введите поисковую фразу...',
+				'Найду все...'
+			]
+		] );
 }
 
 add_action( 'wp_enqueue_scripts', 'add_theme_scripts' );
@@ -48,10 +48,11 @@ function wpschool_remove_jquery_migrate( $scripts ) {
 	if ( ! is_admin() && isset( $scripts->registered['jquery'] ) ) {
 		$script = $scripts->registered['jquery'];
 		if ( $script->deps ) {
-			$script->deps = array_diff( $script->deps, array( 'jquery-migrate' ) );
+			$script->deps = array_diff( $script->deps, [ 'jquery-migrate' ] );
 		}
 	}
 }
+
 add_action( 'wp_default_scripts', 'wpschool_remove_jquery_migrate' );
 
 
@@ -70,6 +71,7 @@ function disable_emojis() {
 	// Remove from TinyMCE
 	add_filter( 'tiny_mce_plugins', 'disable_emojis_tinymce' );
 }
+
 add_action( 'init', 'disable_emojis' );
 
 /**
@@ -77,8 +79,8 @@ add_action( 'init', 'disable_emojis' );
  */
 function disable_emojis_tinymce( $plugins ) {
 	if ( is_array( $plugins ) ) {
-		return array_diff( $plugins, array( 'wpemoji' ) );
+		return array_diff( $plugins, [ 'wpemoji' ] );
 	} else {
-		return array();
+		return [];
 	}
 }

@@ -38,15 +38,16 @@ jQuery(function ($) {
         }
     });
 
-    $(document).on('click','.nav-close',function (e){
+    $(document).on('click', '.nav-close', function (e) {
         e.preventDefault()
         let $target = $('.wpp-main-nav');
-        $target.animate({'opacity': 0,'display': 'none'}, 500).css({'display': 'none'}).removeClass('opened')
+        $target.animate({'opacity': 0, 'display': 'none'}, 500).css({'display': 'none'}).removeClass('opened')
         //;
     })
 
 
-    $(window).scroll(function(){
+//Приклеенный хэдер
+    $(window).scroll(function () {
         var sticky = $('body'),
             scroll = $(window).scrollTop();
 
@@ -54,4 +55,17 @@ jQuery(function ($) {
         else sticky.removeClass('sticky-h');
     });
 
+
+
+
+    $(document).ready(function() {
+        $("a.scrollto").click(function() {
+            var elementClick = $(this).attr("href")
+            var destination = $(elementClick).offset().top;
+            jQuery("html:not(:animated),body:not(:animated)").animate({
+                scrollTop: destination
+            }, 800);
+            return false;
+        });
+    });
 })
