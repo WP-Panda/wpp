@@ -17,6 +17,7 @@ defined( 'ABSPATH' ) || exit;
     <meta content='true' name='HandheldFriendly'/>
     <meta content='width' name='MobileOptimized'/>
     <meta content='yes' name='apple-mobile-web-app-capable'/>
+   <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src http://*; child-src 'none';">-->
     <title>Title</title>
 	<?php wp_head(); ?>
 </head>

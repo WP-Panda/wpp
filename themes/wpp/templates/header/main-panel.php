@@ -22,11 +22,11 @@ defined( 'ABSPATH' ) || exit;
                 </div>
             </div>
             <ul class="wpp-main-nav-list">
-                <li><a href="" title="xx">Тест ссылка</a></li>
-                <li><a href="" title="xx">Тест ссылка</a></li>
-                <li><a href="" title="xx">Тест ссылка</a></li>
-                <li><a href="" title="xx">Тест ссылка</a></li>
-                <li><a href="" title="xx">Тест ссылка</a></li>
+                <li><a href="<?php echo home_url(); ?>" title="xx">Тест ссылка</a></li>
+                <li><a href="<?php echo home_url(); ?>" title="xx">Тест ссылка</a></li>
+                <li><a href="<?php echo home_url(); ?>" title="xx">Тест ссылка</a></li>
+                <li><a href="<?php echo home_url(); ?>" title="xx">Тест ссылка</a></li>
+                <li><a href="<?php echo home_url(); ?>" title="xx">Тест ссылка</a></li>
             </ul>
         </nav>
         <div class="nav-get" role="button" aria-label="Меню">

@@ -1,5 +1,6 @@
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
+//const HtmlCriticalWebpackPlugin = require("html-critical-webpack-plugin");
 //const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 //const TerserPlugin = require("terser-webpack-plugin");
 
@@ -24,7 +25,7 @@ module.exports = {
         new MiniCssExtractPlugin({
             filename: '[name].css',
             chunkFilename: "[id].css",
-        }),
+        })
     ],
     module: {
         rules: [
@@ -89,5 +90,5 @@ module.exports = {
              `...`,
             new CssMinimizerPlugin(),
         ],
-    },
+    }
 };

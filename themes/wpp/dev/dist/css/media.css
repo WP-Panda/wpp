@@ -1,9 +1,11 @@
 @media ( max-width: 1124px) {
     .wpp-main-nav-list {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
+        background-color: var(--dark-lite);
+        display: inline-block;
+        left: 0;
+        position: absolute;
+        top: -500px;
+        width: 100%;
     }
 
     .nav-get {
@@ -15,20 +17,25 @@
         padding-right: 12px;
     }
 
-    .wpp-main-nav {
+  /*  .wpp-main-nav {
         opacity: 0;
         display: none;
-    }
+    }*/
 
     .wpp-main-nav.opened {
-        height: 100%;
+        /*height: 100%;
         position: fixed;
         top: 0;
         box-sizing: border-box;
         background-color: #fff;
         width: 100vw;
         left: 0;
-        padding: 20px;
+        padding: 20px;*/
+    }
+
+    .wpp-main-nav.opened ul.wpp-main-nav-list li {
+        opacity: 0;
+        display: none;
     }
 
     ul.wpp-main-nav-list li {
@@ -62,11 +69,43 @@
     }
 
     .wpp-main-nav.opened .nav-close {
-        display: block;
+       /* display: block;*/
     }
 
     .wpp-main-nav.opened .wpp-nav-header {
-        display: block;
+       /* display: block;*/
     }
 
 }
+
+
+@media (max-width: 576px) {
+    .wpp-1_2 {
+        width: 100%;
+    }
+}
+/*
+@media (min-width: 768px) {
+    .wpp-container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .wpp-container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .wpp-container {
+        max-width: 1140px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .wpp-container {
+        max-width: 1320px;
+    }
+}
+*/

@@ -12,7 +12,8 @@ defined( 'ABSPATH' ) || exit;
 get_header();
 ?>
 
-<body <?php body_class(); ?>>
+<body <?php body_class(); ?> itemscope itemtype="https://schema.org/WebSite">
+<meta itemprop="url" content="<?php echo home_url( '/' ); ?>"/>
 <header class="wpp-container site-header">
 
 	<?php

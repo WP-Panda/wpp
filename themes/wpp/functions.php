@@ -12,7 +12,8 @@ defined( 'ABSPATH' ) || exit;
 require_once 'core/init.php';
 
 function add_theme_scripts() {
-	wp_enqueue_style( 'wpp-main', get_stylesheet_directory_uri() . '/assets/wpp-main.css', [], '0.0.0.2' );
+	wp_register_style( 'wpp-font', get_stylesheet_directory_uri() . '/assets/font-head.css', [], '0.0.0.2' );
+	wp_enqueue_style( 'wpp-main', get_stylesheet_directory_uri() . '/assets/wpp-main.css', ['wpp-font'], '0.0.0.2' );
 
 	wp_enqueue_script( 'wpp-main',
 		get_stylesheet_directory_uri() . '/assets/wpp-main.js',
@@ -32,6 +33,12 @@ function add_theme_scripts() {
 }
 
 add_action( 'wp_enqueue_scripts', 'add_theme_scripts' );
+
+function add_footer_scripts() {
+	wp_enqueue_style( 'fonts', get_stylesheet_directory_uri() . '/assets/fonts-footer.css', [], '0.0.0.2' );
+}
+add_action( 'wp_footer', 'add_footer_scripts' );
+
 
 //REMOVE GUTENBERG BLOCK LIBRARY CSS FROM LOADING ON FRONTEND
 function remove_wp_block_library_css() {

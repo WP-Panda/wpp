@@ -1,3 +1,4 @@
+import './js/search-form.js';
 import './js/components.js';
 import './js/wpp-main.js';
 

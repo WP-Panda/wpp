@@ -84,37 +84,7 @@
 }
 
 
-/*
-@media (min-width: 576px) {
-    .wpp-container {
-        max-width: 540px;
-    }
-}
 
-@media (min-width: 768px) {
-    .wpp-container {
-        max-width: 720px;
-    }
-}
-
-@media (min-width: 992px) {
-    .wpp-container {
-        max-width: 960px;
-    }
-}
-
-@media (min-width: 1200px) {
-    .wpp-container {
-        max-width: 1140px;
-    }
-}
-
-@media (min-width: 1400px) {
-    .wpp-container {
-        max-width: 1320px;
-    }
-}
-*/
 .wpp-row {
     width: 100%;
     display: flex;
