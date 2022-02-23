@@ -16,11 +16,6 @@ defined( 'ABSPATH' ) || exit;
     </div>
     <div class="wpp-col wpp-3_4">
         <nav class="wpp-main-nav">
-            <div class="wpp-nav-header">
-                <div class="nav-close" role="button" aria-label="Закрыть Меню">
-                    <i class="wpp-i-x-close"></i>
-                </div>
-            </div>
             <ul class="wpp-main-nav-list">
                 <li><a href="<?php echo home_url(); ?>" title="xx">Тест ссылка</a></li>
                 <li><a href="<?php echo home_url(); ?>" title="xx">Тест ссылка</a></li>
@@ -29,7 +24,7 @@ defined( 'ABSPATH' ) || exit;
                 <li><a href="<?php echo home_url(); ?>" title="xx">Тест ссылка</a></li>
             </ul>
         </nav>
-        <div class="nav-get" role="button" aria-label="Меню">
+        <div class="nav-get" role="button" aria-label="<?php _e( 'Меню', 'wpp' ) ?>">
             <i class="wpp-i-burger"></i>
         </div>
     </div>

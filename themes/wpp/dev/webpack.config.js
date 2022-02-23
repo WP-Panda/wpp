@@ -11,7 +11,8 @@ var path = require('path');
 const jsPath = './dist/',
     outputPath = '../assets',
     entryPoints = {
-        'wpp-main': jsPath + '/index.js'
+        'wpp-header': jsPath + '/index.js',
+        'wpp-footer':  jsPath + '/index-footer.js'
     };
 
 module.exports = {
