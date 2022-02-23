@@ -25,3 +25,6 @@ node_modules/
 /themes/wpp/*.html
 /themes/wpp/_*
 /themes/wpp/assets/dist/
+/composer.phar
+/themes/wpp/core/vendor/
+/themes/wpp/core/composer.lock

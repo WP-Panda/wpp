@@ -1,0 +1,15 @@
+{
+  "name": "vendor_name/core",
+  "description": "description",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "WP_Panda",
+      "email": "email@example.com"
+    }
+  ],
+  "require": {
+    "rosell-dk/webp-convert":"2.9.1"
+  }
+}
