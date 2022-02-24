@@ -17,11 +17,12 @@ defined( 'ABSPATH' ) || exit;
     <div class="wpp-col wpp-3_4">
         <nav class="wpp-main-nav">
             <ul class="wpp-main-nav-list">
-                <li><a href="<?php echo home_url(); ?>" title="xx">Тест ссылка</a></li>
-                <li><a href="<?php echo home_url(); ?>" title="xx">Тест ссылка</a></li>
-                <li><a href="<?php echo home_url(); ?>" title="xx">Тест ссылка</a></li>
-                <li><a href="<?php echo home_url(); ?>" title="xx">Тест ссылка</a></li>
-                <li><a href="<?php echo home_url(); ?>" title="xx">Тест ссылка</a></li>
+                <li><a href="<?php echo home_url(); ?>" title="xx">Видео уроки</a></li>
+                <li><a href="<?php echo home_url(); ?>" title="xx">Статьи</a></li>
+                <li><a href="<?php echo home_url(); ?>" title="xx">Снипеты</a></li>
+                <li><a href="<?php echo home_url(); ?>" title="xx">Вопрос ответ</a></li>
+                <li><a href="<?php echo home_url(); ?>" title="xx">Контакты</a></li>
+                <li><a href="<?php echo home_url(); ?>" title="xx">Авторизация</a></li>
             </ul>
         </nav>
         <div class="nav-get" role="button" aria-label="<?php _e( 'Меню', 'wpp' ) ?>">

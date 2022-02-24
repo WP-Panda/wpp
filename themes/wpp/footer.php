@@ -9,6 +9,8 @@
 
 defined( 'ABSPATH' ) || exit;
 ?>
+</div>
+</div>
 <footer class="site-footer">
 
 </footer>

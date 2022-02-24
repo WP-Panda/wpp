@@ -42,6 +42,6 @@ add_action( 'wp_enqueue_scripts', 'add_theme_scripts' );
 
 function add_footer_scripts() {
 	wp_enqueue_style( 'fonts', get_stylesheet_directory_uri() . '/assets/fonts-footer.css', [], '0.0.0.2' );
-	wp_enqueue_style( 'wpp-footer', get_stylesheet_directory_uri() . '/assets/wpp-header.css', ['wpp-font'], '0.0.0.2' );
+	wp_enqueue_style( 'wpp-footer', get_stylesheet_directory_uri() . '/assets/wpp-footer.css', ['wpp-font'], '0.0.0.2' );
 }
 add_action( 'wp_footer', 'add_footer_scripts' );

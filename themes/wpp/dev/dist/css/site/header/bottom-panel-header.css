@@ -1,0 +1,37 @@
+/* нижняя панель */
+.wpp-head-bottom-panel {
+    background-color: var(--lite-dark);
+    padding: 15px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: -3px;
+}
+
+.wpp-search-trigger {
+    position: absolute;
+    padding: 10px;
+    margin-top: 15px;
+    background-color: var(--lite-dark);
+    width: 50px;
+    text-align: center;
+    border-radius: 0 0 7px 7px;
+    right: 15px;
+}
+
+.wpp-search-btn {
+    background-color: var(--error);
+    position: absolute;
+    right: 0;
+    padding: 8px 45px 5px;
+    color: var(--lite-dark);
+    transition: background-color .3s;
+}
+
+form.wpp-main-search {
+    position: relative;
+}
+
+
+input.wpp-input.wpp-search-input {
+    padding-right: 130px;
+}

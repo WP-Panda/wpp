@@ -1,148 +1,19 @@
 h1,h2,h3,h4,h5,h6,p,span,a,input,div{
     font-family: 'Roboto', sans-serif;
 }
-/********************************/
-/* ХЭДЕР */
-/********************************/
-header.site-header {
-    float: left;
-    margin-bottom: 50px;
-    position: relative;
-}
 
-/*Верхняя панель*/
-.wpp-head-top-panel {
-    background: var(--dark-dark);
-    padding: 2px 0;
-    z-index: 2;
-    position: relative;
-}
-
-.wpp-top-user-nav ul {
-    margin: 2px 0;
-    line-height: .5;
-}
-.wpp-top-user-nav li {
-    margin-right: 6px;
-    display: inline-block;
-}
-
-.wpp-top-user-nav li:last-of-type {
-    margin-right: 0;
-}
-
-.wpp-top-user-nav a {
-    width: 24px;
-    border-radius: 50%;
-    display: block;
-    text-align: center;
-    padding: 5px 2px;
-    -webkit-box-sizing: content-box;
-    box-sizing: content-box;
-    float: right;
-    color: var(--lite-dark);
-    text-decoration: none;
-    -webkit-transition: background-color .3s;
-    -o-transition: background-color .3s;
-    transition: background-color .3s;
-}
-
-.sticky-h .wpp-head-main-panel {
-    position: fixed;
-    top: 0;
-}
-
-/*Главная панель*/
-.wpp-head-main-panel {
-    background-color: var(--dark-lite);
-    z-index: 2;
-    position: relative;
-    align-items: center;
-}
-
-.logo {
-    font-size: 50px;
-    font-weight: 600;
-    color: var(--gray-lite);
-}
-
-.nav-get {
-    display: none;
-}
-
-.wpp-nav-header {
-    height: 35px;
-}
-
-.wpp-main-nav-list {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    line-height: .7;
-    display: flex;
-    justify-content: center;
-}
-
-.wpp-main-nav-list li {
-    float: left;
-    font-size: 1.5rem;
-    margin-right: 15px;
-}
-
-.wpp-main-nav-list a {
-    font-size: 20px;
-    text-decoration: none;
-    font-weight: 300;
-    padding: 18px 0;
-    display: block;
-    color: var(--gray-lite);
-    transition: color .3s;
-}
-
-.wpp-nav-header {
-    display: none;
-}
-
-/* нижняя панель */
-.wpp-head-bottom-panel {
-    background-color: var(--lite-dark);
-    padding: 15px 0;
-    position: absolute;
-    z-index: 1;
-    bottom: -3px;
-}
-
-.wpp-search-trigger {
-    position: absolute;
-    padding: 10px;
-    margin-top: 15px;
-    background-color: var(--lite-dark);
-    width: 50px;
-    text-align: center;
-    border-radius: 0 0 7px 7px;
-    right: 15px;
-}
-
-.wpp-search-btn {
-    background-color: var(--error);
-    position: absolute;
-    right: 0;
-    padding: 8px 45px 5px;
-    color: var(--lite-dark);
-    transition: background-color .3s;
-}
-
-form.wpp-main-search {
-    position: relative;
-}
-
-
-input.wpp-input.wpp-search-input {
-    padding-right: 130px;
-}
+@import "site/header/header.css";
+@import "site/header/top-panel-header.css";
+@import "site/header/main-panel-header.css";
+@import "site/header/bottom-panel-header.css";
+@import "site/content/content.css";
 
 
 
-.content {
-    float: left;
-}
+
+
+
+
+
+
+

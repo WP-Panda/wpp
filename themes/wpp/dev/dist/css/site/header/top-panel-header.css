@@ -1,0 +1,36 @@
+/*Верхняя панель*/
+.wpp-head-top-panel {
+    background: var(--dark-dark);
+    padding: 2px 0;
+    z-index: 2;
+    position: relative;
+}
+
+.wpp-top-user-nav ul {
+    margin: 2px 0;
+    line-height: .5;
+}
+.wpp-top-user-nav li {
+    margin-right: 6px;
+    display: inline-block;
+}
+
+.wpp-top-user-nav li:last-of-type {
+    margin-right: 0;
+}
+
+.wpp-top-user-nav a {
+    width: 24px;
+    border-radius: 50%;
+    display: block;
+    text-align: center;
+    padding: 5px 2px;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    float: right;
+    color: var(--lite-dark);
+    text-decoration: none;
+    -webkit-transition: background-color .3s;
+    -o-transition: background-color .3s;
+    transition: background-color .3s;
+}

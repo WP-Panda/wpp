@@ -18,3 +18,19 @@ defined( 'ABSPATH' ) || exit;
     <meta content='width' name='MobileOptimized'/>
 	<?php wp_head(); ?>
 </head>
+<body <?php body_class(); ?> itemscope itemtype="https://schema.org/WebSite">
+<meta itemprop="url" content="<?php echo home_url( '/' ); ?>"/>
+<header class="wpp-container site-header">
+
+	<?php
+	/**
+	 * @hooked wpp_header_top_panel - 10
+	 * @hooked wpp_header_main_panel - 20
+	 * @hooked wpp_header_bottom_panel - 30
+	 */
+
+	do_action( 'wpp_theme_header' )
+	?>
+</header>
+<div class="wpp-container content">
+    <div class="wpp-row">

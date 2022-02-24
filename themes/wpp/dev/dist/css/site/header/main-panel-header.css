@@ -1,0 +1,55 @@
+.sticky-h .wpp-head-main-panel {
+    position: fixed;
+    top: 0;
+}
+
+/*Главная панель*/
+.wpp-head-main-panel {
+    background-color: var(--dark-lite);
+    z-index: 2;
+    position: relative;
+    align-items: center;
+}
+
+.logo {
+    font-size: 50px;
+    font-weight: 600;
+    color: var(--gray-lite);
+}
+
+.nav-get {
+    display: none;
+}
+
+.wpp-nav-header {
+    height: 35px;
+}
+
+.wpp-main-nav-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    line-height: .7;
+    display: flex;
+    justify-content: center;
+}
+
+.wpp-main-nav-list li {
+    float: left;
+    font-size: 1.5rem;
+    margin-right: 15px;
+}
+
+.wpp-main-nav-list a {
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 300;
+    padding: 18px 0;
+    display: block;
+    color: var(--gray-lite);
+    transition: color .3s;
+}
+
+.wpp-nav-header {
+    display: none;
+}
